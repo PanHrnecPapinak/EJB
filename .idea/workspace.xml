@@ -5,34 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a229736-9b43-436c-871a-ad5b23112c63" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ejb/HelloServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ejb/PersonBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ejb/PersonBeanInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/ejb/model/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week-02/day-2/DrawingAndGraphics/src/RainbowBoxFunctionb.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week-02/day-2/DrawingAndGraphics/src/RainbowBoxFunctionb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week-02/day-2/fileManipulation/src/CopyAsOneFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week-02/day-2/fileManipulation/src/CopyAsOneFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week-02/day-2/fileManipulation/src/makeFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week-02/day-2/fileManipulation/src/makeFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week-02/day-4/DrawingProjects/src/Triangles.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week-02/day-4/DrawingProjects/src/Triangles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week-04/day-3/ToDoApp/src/ToDoAppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week-04/day-3/ToDoApp/src/ToDoAppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week-04/day-5/TrialExam/src/com/gfa/exam/SymmetricMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week-04/day-5/TrialExam/src/com/gfa/exam/SymmetricMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../week-04/day-5/TrialExam/src/com/gfa/exam/getTwoMostCommonCharacters.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../week-04/day-5/TrialExam/src/com/gfa/exam/getTwoMostCommonCharacters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +16,23 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="EJB" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -88,7 +78,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/sorce/Desktop/GreenFox/union_lukas/Union",
+    "last_opened_file_path": "C:/Users/sorce/Desktop/EJB/EJB",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -111,11 +101,14 @@
       <predefined_log_file id="Tomcat Host Manager Log" />
       <option name="contextPath" value="/EJB" />
       <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
+      <option name="envOptions">
+        <map />
+      </option>
       <option name="extraClassPath" value="" />
       <option name="tomcatInfo">
         <TomcatInfo>
           <option name="name" value="Apache Tomcat/10.0.27" />
-          <option name="path" value="$PROJECT_DIR$/../../../apache-tomee-plume-9.0.0" />
+          <option name="path" value="$PROJECT_DIR$/../../GreenFox/apache-tomee-plume-9.0.0" />
           <option name="version" value="10.0.27.0" />
         </TomcatInfo>
       </option>
@@ -136,6 +129,7 @@
       <updated>1680784887570</updated>
       <workItem from="1680784889064" duration="4699000" />
       <workItem from="1681205811780" duration="18243000" />
+      <workItem from="1681242025396" duration="780000" />
     </task>
     <servers />
   </component>

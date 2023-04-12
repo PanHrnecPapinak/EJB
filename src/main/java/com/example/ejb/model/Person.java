@@ -1,5 +1,6 @@
 package com.example.ejb.model;
 
+import com.example.ejb.SexEnum;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -13,13 +14,13 @@ public class Person {
     @GeneratedValue
     private Long id;
 
-    @Column
+    @Column(name = "name")
     private String name;
 
-    @Column(nullable = false)
-    private String sex;
+    @Column(name = "sex",nullable = false) // DB table checkuje hodnotu na "male / female" jinak nevytvoří záznám.
+    private SexEnum sex;
 
-    @Column(columnDefinition = "DATE")
+    @Column(name = "Birthday",columnDefinition = "DATE")
     private Date birthday;
 
     public Long getId() {
@@ -38,11 +39,11 @@ public class Person {
         this.name = name;
     }
 
-    public String getSex() {
+    public SexEnum getSex() {
         return sex;
     }
 
-    public void setSex(String sex) {
+    public void setSex(SexEnum sex) {
         this.sex = sex;
     }
 
