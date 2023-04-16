@@ -1,0 +1,5 @@
+INDEX VERSION 1.132
+C:\Users\sorce\Desktop\cz.ubk.exercise.EJB\EJB UBK Ukol\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3558212379.index
+\Web\src\main\java
+C:\Users\sorce\eclipse-workspace-YT\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3759190180.index
+\EJBWeb\src\main\java

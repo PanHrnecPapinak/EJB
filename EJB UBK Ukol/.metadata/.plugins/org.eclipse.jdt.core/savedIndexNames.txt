@@ -1,0 +1,7 @@
+INDEX VERSION 1.132+C:\Users\sorce\Desktop\cz.ubk.exercise.EJB\EJB UBK Ukol\.metadata\.plugins\org.eclipse.jdt.core
+1918552229.index
+3125200830.index
+4084931472.index
+3238157223.index
+1056341953.index
+1865797976.index

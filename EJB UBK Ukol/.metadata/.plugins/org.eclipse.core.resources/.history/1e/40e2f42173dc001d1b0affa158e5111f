@@ -1,0 +1,13 @@
+package UBK.beans;
+
+import javax.ejb.Remote;
+
+@Remote
+public interface PersonBeanRemote {
+	public int createPerson(String name, String sex, String birthday);
+	public boolean deletePerson(long Person);
+	public void getPersonForName(String name);
+	public void getAllPersons();
+	public void updatePerson(long personId, String name);
+	
+}

@@ -1,0 +1,44 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ page import='javax.naming.InitialContext'%>
+<%@ page import='UBK.beans.PersonBeanRemote'%>
+<%@ page import='javax.naming.NamingException'%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- Sample 3.10: Account Creation Form -->
+	<FORM action="CreateNewAccount.jsp">
+		<h1>Savings Account Creation Form</h1>
+		Enter Your Name: <br> <input name="person_name" type="text"
+			size="25" value=""><br> Sex male/female: <br> <Input
+			person_sex" type="text" size="15" value=""><br> Birthday:
+		<br> <Input name="person_birthday" type="text" size="35" value=""><br>
+
+
+		<input name="NewAc" type="submit" value="Submit"><br>
+	</FORM>
+
+	<%
+	//Sample 3.11: Create Session Bean and Submit Account Creation Request
+	String PersonName = request.getParameter("person_name");
+	String InitBalance = request.getParameter("balance");
+	if (PersonName != null && PersonName.trim().length() > 0) {
+		try {
+			InitialContext ctx = new InitialContext();
+			PersonBeanRemote accontMgr = (PersonBeanRemote) ctx
+			.lookup("java:global/EARUBK/PersonBean/PersonBeanRemote!" + "UBK.beans.PersonBeanRemote");
+			int balance = new Integer(InitBalance).intValue();
+			long id = accontMgr.createPerson(name, sex, birthday);
+			out.println("Account created.  Account holder Personal ID <h2"
+			+ "style=\"font-size: 16pt; color: teal; font-family: Verdana;\">" + id + "</h2>");
+		} catch (NamingException e) {
+			e.printStackTrace();
+		}
+	}
+	%>
+</body>
+</html>

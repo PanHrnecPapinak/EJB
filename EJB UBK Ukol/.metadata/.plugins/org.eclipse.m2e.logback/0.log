@@ -1,0 +1,26 @@
+2023-04-14 14:30:06,885 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-04-14 21:50:11,186 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-10.0.13; built: 2022-12-07T20:13:20.134Z; git: 1c2636ea05c0ca8de1ffd6ca7f3a98ac084c766d; jvm 18.0.2.1+1-1
+2023-04-14 21:50:11,270 [Start Help Server] INFO  o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2023-04-14 21:50:11,296 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@b29270e{/help,null,AVAILABLE}
+2023-04-14 21:50:11,307 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@1615177{HTTP/1.1, (http/1.1)}{127.0.0.1:53190}
+2023-04-14 21:50:11,310 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started Server@5a0d937f{STARTING}[10.0.13,sto=0] @26423185ms
+2023-04-14 22:06:19,673 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped Server@5a0d937f{STOPPING}[10.0.13,sto=0]
+2023-04-14 22:06:19,679 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@1615177{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
+2023-04-14 22:06:19,685 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@b29270e{/help,null,STOPPED}
+2023-04-14 22:36:41,282 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-04-15 08:04:12,478 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-10.0.13; built: 2022-12-07T20:13:20.134Z; git: 1c2636ea05c0ca8de1ffd6ca7f3a98ac084c766d; jvm 18.0.2.1+1-1
+2023-04-15 08:04:12,495 [Start Help Server] INFO  o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2023-04-15 08:04:12,519 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@4b4c77da{/help,null,AVAILABLE}
+2023-04-15 08:04:12,530 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@7a80004e{HTTP/1.1, (http/1.1)}{127.0.0.1:53142}
+2023-04-15 08:04:12,532 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started Server@43197668{STARTING}[10.0.13,sto=0] @34078259ms
+2023-04-15 08:56:30,191 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped Server@43197668{STOPPING}[10.0.13,sto=0]
+2023-04-15 08:56:30,197 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@7a80004e{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
+2023-04-15 08:56:30,206 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@4b4c77da{/help,null,STOPPED}
+2023-04-15 08:57:44,636 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-04-15 22:31:14,872 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-04-15 22:47:41,906 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-04-15 22:53:28,183 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-04-16 09:25:56,528 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-04-16 15:49:49,541 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-04-16 15:51:45,118 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-04-16 16:13:23,615 [Worker-47: Creating project "Person"] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: cz.ubk.exercise:Person:0.0.1-SNAPSHOT @ C:\Users\sorce\Desktop\cz.ubk.exercise.EJB\EJB UBK Ukol\Person\pom.xml.
