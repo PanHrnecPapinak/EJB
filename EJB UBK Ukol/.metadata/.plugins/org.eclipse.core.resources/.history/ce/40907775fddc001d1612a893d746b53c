@@ -1,0 +1,45 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ page import='javax.naming.InitialContext'%>
+<%@ page import='UBK.beans.PersonBeanRemote'%>
+<%@ page import='javax.naming.NamingException'%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>UBK exercise</h1>
+	<a href="http://localhost:8080/Web/WebMain.jsp">Home</a>
+
+
+	<FORM action="WebDeletePerson.jsp">
+		<h1>Person Creation Form</h1>
+		Enter person ID to delete: <br> <input name="person_id" type="number"
+			size="25" value=""><br>
+
+		<input name="NewAc" type="submit" value="Submit"><br>
+	</FORM>
+
+	<%
+
+	Long PersonId = request.getParameter("person_id");
+	if (PersonId != null) {
+		try {
+			InitialContext ctx = new InitialContext();
+			PersonBeanRemote PersonManager = (PersonBeanRemote) ctx
+			.lookup("java:global/EARUBK/PersonBean/PersonBean!" + "UBK.beans.PersonBeanRemote");
+			
+			long id = PersonManager.createPerson(PersonName, PersonSex, Birthday);
+			
+			out.println("Person created. New personal ID assigned: <h2"
+			+ "style=\"font-size: 16pt; color: teal; font-family: Verdana;\">" + id + "</h2>");
+		} catch (NamingException e) {
+			e.printStackTrace();
+		}
+	}
+	%>
+</body>
+</html>

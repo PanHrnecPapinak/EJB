@@ -1,0 +1,68 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ page import='javax.naming.InitialContext'%>
+<%@ page import='UBK.beans.PersonBeanRemote'%>
+<%@ page import='javax.naming.NamingException'%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>UBK exercise</h1>
+	<a href="http://localhost:8080/Web/WebMain.jsp">Home</a>
+
+
+<FORM action="WebUpdatePerson.jsp">
+  <h1>Person Update Form</h1>
+  <label for="person_id">Enter person ID to update:</label>
+  <input name="person_id" type="number" size="25" value=""><br>
+  <label for="person_name">Enter new name for person:</label>
+  <input name="person_name" type="text" size="25" value=""><br>
+  <input name="NewAc" type="submit" value="Submit"><br>
+  <script>
+    function confirmUpdate() {
+      return confirm("Are you sure you want to update this person's name?");
+    }
+    document.querySelector('form').addEventListener('submit', function(e) {
+      if (!confirmUpdate()) {
+        e.preventDefault();
+      }
+    });
+  </script>
+</FORM>
+
+
+	<%
+
+	String personIdStr = request.getParameter("person_id");
+	String personName = request.getParameter("person_name");
+	
+	if (personIdStr != null && personName != null) {
+		try {
+			long personId = Long.parseLong(personIdStr);
+			InitialContext ctx = new InitialContext();
+			PersonBeanRemote PersonManager = (PersonBeanRemote) ctx
+			.lookup("java:global/EARUBK/PersonBean/PersonBean!" + "UBK.beans.PersonBeanRemote");
+			
+			boolean Status = PersonManager.updatePerson(personId, personName);
+			
+			if (Status = true){
+				out.println("Name was changed for ID: <h2"
+						+ "style=\"font-size: 16pt; color: teal; font-family: Verdana;\">" + personId + " new name: " + personName + "</h2>");
+			}
+			else {
+				out.println("Process failed. Try again for ID: <h2"
+						+ "style=\"font-size: 16pt; color: teal; font-family: Verdana;\">" + personId + "</h2>");
+			}
+			
+			
+		} catch (NamingException e) {
+			e.printStackTrace();
+		}
+	}
+	%>
+</body>
+</html>

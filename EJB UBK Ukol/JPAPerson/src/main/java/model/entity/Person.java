@@ -3,23 +3,18 @@ package model.entity;
 import java.io.Serializable;
 import javax.persistence.*;
 
-
-/**
- * The persistent class for the person database table.
- * 
- */
 @Entity
-@Table(name="person")
-@NamedQuery(name="Person.findAll", query="SELECT p FROM Person p")
+@Table(name = "person")
+@NamedQuery(name = "Person.findAll", query = "SELECT p FROM Person p")
 public class Person implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name="ID")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "ID")
 	private long id;
 
-	@Column(name="Birthday")
+	@Column(name = "Birthday")
 	private String birthday;
 
 	private String name;

@@ -1,0 +1,49 @@
+package UBK.beans;
+
+import javax.ejb.LocalBean;
+import javax.ejb.Stateless;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import model.entity.Person;
+
+/**
+ * Session Bean implementation class PersonBean
+ */
+@Stateless(mappedName = "PersonBeanMap")
+@LocalBean
+public class PersonBean implements PersonBeanRemote {
+	@PersistenceContext(unitName = "JPAPerson")
+	EntityManager em;
+	
+    public PersonBean() {
+    }
+
+	@Override
+	public long createPerson(String name, String sex, String birthday) {
+		Person MyPerson = new Person();
+		MyPerson.setBirthday(birthday);
+		MyPerson.setName(name);
+		MyPerson.setSex(sex);
+		em.persist(MyPerson);
+		return MyPerson.getId();
+	}
+
+	@Override
+	public boolean deletePerson(long Person) {
+		return false;
+	}
+
+	@Override
+	public void getPersonForName(String name) {		
+	}
+
+	@Override
+	public void getAllPersons() {		
+	}
+
+	@Override
+	public void updatePerson(long personId, String name) {		
+	}
+
+}
