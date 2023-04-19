@@ -9,6 +9,8 @@ import javax.persistence.PersistenceContext;
 
 import model.entity.Person;
 
+//Create Entity manager
+//Unit name is saved in persistence.xml
 @Stateless(mappedName = "PersonBeanMap")
 @LocalBean
 public class PersonBean implements PersonBeanRemote {
@@ -18,6 +20,7 @@ public class PersonBean implements PersonBeanRemote {
 	public PersonBean() {
 	}
 
+	//Create new person object to DB
 	@Override
 	public long createPerson(String name, String sex, String birthday) {
 		Person MyPerson = new Person();
@@ -28,6 +31,7 @@ public class PersonBean implements PersonBeanRemote {
 		return MyPerson.getId();
 	}
 
+	//Delete person from DB
 	@Override
 	public boolean deletePerson(long personId) {
 		boolean ret = false;
@@ -38,20 +42,23 @@ public class PersonBean implements PersonBeanRemote {
 		}
 		return ret;
 	}
-
+	
+	//Find all persons by name key and return list of them
 	@Override
 	public List<Person> getPersonForName(String name) {
 		List<Person> persons = em.createQuery("SELECT p FROM Person p WHERE p.name = :name", Person.class)
 				.setParameter("name", name).getResultList();
 		return persons;
 	}
-
+	
+	//Return all persons from the DB as a list
 	@Override
 	public List<Person> getAllPersons() {
 		List<Person> persons = em.createQuery("SELECT p FROM Person p", Person.class).getResultList();
 		return persons;
 	}
-
+	
+	//Find a person by ID and change its name
 	@Override
 	public boolean updatePerson(long personId, String name) {
 		boolean ret = false;

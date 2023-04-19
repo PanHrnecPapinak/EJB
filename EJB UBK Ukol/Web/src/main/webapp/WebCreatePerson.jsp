@@ -14,7 +14,7 @@
 	<h1>UBK exercise</h1>
 	<a href="http://localhost:8080/Web/WebMain.jsp">Home</a>
 
-
+	<!-- website form to create new person with name, sex and birthday -->
 	<FORM action="WebCreatePerson.jsp">
 		<h1>Person Creation Form</h1>
 		Enter Your Name: <br> <input name="person_name" type="text"
@@ -26,6 +26,8 @@
 	</FORM>
 
 	<%
+	
+	//Servlet Layer part for to create new person. Read all inputs from form and create new record in DB.
 	String PersonName = request.getParameter("person_name");
 	String PersonSex = request.getParameter("person_sex");
 	String Birthday = request.getParameter("person_birthday");

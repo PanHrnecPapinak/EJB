@@ -14,7 +14,7 @@
 	<h1>UBK exercise</h1>
 	<a href="http://localhost:8080/Web/WebMain.jsp">Home</a>
 
-
+	<!-- website form to enter person ID to delete and submit -->
 	<FORM action="WebDeletePerson.jsp">
 		<h1>Person Deletion Form</h1>
 		<label for="person_id">Enter person ID to delete:</label> <input
@@ -34,8 +34,9 @@
 	</FORM>
 
 	<%
+	
+	//Servlet Layer part for delete person form. If we enter ID, it find it in DB and delete its record.
 	String personIdStr = request.getParameter("person_id");
-
 	if (personIdStr != null) {
 		try {
 			long personId = Long.parseLong(personIdStr);

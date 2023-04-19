@@ -18,6 +18,8 @@
 	<br />
 
 	<%
+	
+	//Servlet Layer part for search all persons form. On load the webstite it will print out on website all records.
 	boolean run = true;
 	if (run == true) {
 		try {

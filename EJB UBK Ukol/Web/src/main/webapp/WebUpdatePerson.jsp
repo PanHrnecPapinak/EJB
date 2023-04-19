@@ -14,7 +14,7 @@
 	<h1>UBK exercise</h1>
 	<a href="http://localhost:8080/Web/WebMain.jsp">Home</a>
 
-
+	<!-- website form to enter person ID where we want to change name -->
 	<FORM action="WebUpdatePerson.jsp">
 		<h1>Person Update Form</h1>
 		<label for="person_id">Enter person ID to update:</label> <input
@@ -37,6 +37,8 @@
 
 
 	<%
+	
+	//Servlet Layer part for update person's name form by id. Change in selected ID's record columns "name" by desired.
 	String personIdStr = request.getParameter("person_id");
 	String personName = request.getParameter("person_name");
 

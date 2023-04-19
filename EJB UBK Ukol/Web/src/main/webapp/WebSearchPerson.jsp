@@ -16,7 +16,7 @@
 	<h1>UBK exercise</h1>
 	<a href="http://localhost:8080/Web/WebMain.jsp">Home</a>
 
-
+	<!-- website form to enter name which we want to search for in DB -->
 	<FORM action="WebSearchPerson.jsp">
 		<h1>Person search by name Form</h1>
 		<label for="person_name">Search name:</label> <input
@@ -27,6 +27,7 @@
 
 	<%
 
+	//Servlet Layer part for sreach person form by name. If we enter name, it will print out on website all records with its name.
 	String personName = request.getParameter("person_name");
 
 	if (personName != null) {

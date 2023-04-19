@@ -8,6 +8,7 @@ import model.entity.Person;
 
 @Remote
 public interface PersonBeanRemote {
+	//Declare the interface method
 	public long createPerson(String name, String sex, String birthday);
 
 	public boolean deletePerson(long Person);
